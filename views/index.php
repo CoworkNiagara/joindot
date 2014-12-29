@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Become a member - Cowork Niagara</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="assets/vendor/normalize.css">
     <link rel="stylesheet" href="assets/main.css">
 </head>
@@ -18,47 +19,49 @@
     <form method="POST" autocomplete="on" novalidate>
         <section>
             <main>
-                <h2>Your Information</h2>
+                <fieldset>
+                    <legend>Your Information</legend>
 
-                <div class="field">
-                    <label>First Name</label>
-                    <input type="text" required>
-                </div>
+                    <div class="field required">
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
 
-                <div class="field">
-                    <label>Last Name</label>
-                    <input type="text" required>
-                </div>
+                    <div class="field required">
+                        <label>Last Name</label>
+                        <input type="text" required>
+                    </div>
 
-                <div class="field">
-                    <label>Company Name</label>
-                    <input type="text" placeholder="Optional">
-                </div>
+                    <div class="field">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="Optional">
+                    </div>
 
-                <div class="field">
-                    <label>Address</label>
-                    <input type="text" required>
-                </div>
+                    <div class="field required">
+                        <label>Address</label>
+                        <input type="text" required>
+                    </div>
 
-                <div class="field">
-                    <label>Address 2</label>
-                    <input type="text" placeholder="Apt, Suite, etc">
-                </div>
+                    <div class="field">
+                        <label>Address 2</label>
+                        <input type="text" placeholder="Apt, Suite, etc">
+                    </div>
 
-                <div class="field">
-                    <label>City</label>
-                    <input type="text" required>
-                </div>
+                    <div class="field required">
+                        <label>City</label>
+                        <input type="text" required>
+                    </div>
 
-                <div class="field">
-                    <label>Postal Code</label>
-                    <input type="text" placeholder="L#L #L#" required>
-                </div>
+                    <div class="field required">
+                        <label>Postal Code</label>
+                        <input type="text" size="10" placeholder="L#L #L#" required>
+                    </div>
 
-                <div class="field">
-                    <label>Phone Number</label>
-                    <input type="text" placeholder="905-555-1212" required>
-                </div>
+                    <div class="field required">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="905-555-1212" required>
+                    </div>
+                </fieldset>
             </main>
 
             <aside>
@@ -74,22 +77,24 @@
 
         <section>
             <main>
-                <h2>Email Address</h2>
+                <fieldset>
+                    <legend>Email &amp; Newsletter</legend>
 
-                <div class="field">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="your@emailaddress.com" required>
-                </div>
+                    <div class="field required">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="your@emailaddress.com" required>
+                    </div>
 
-                <div class="field">
-                    <label>Confirm Email Address</label>
-                    <input type="email" placeholder="your@emailaddress.com" required>
-                </div>
+                    <div class="field required">
+                        <label>Confirm Email Address</label>
+                        <input type="email" placeholder="your@emailaddress.com" required>
+                    </div>
 
-                <div class="field">
-                    <label>Newsletter Signup</label>
-                    <input type="checkbox">
-                </div>
+                    <div class="field">
+                        <input type="checkbox">
+                        <label>Yes, sign me up to the Cowork Niagara Newsletter</label>
+                    </div>
+                </fieldset>
             </main>
 
             <aside>
@@ -111,21 +116,23 @@
 
         <section>
             <main>
-                <h2>Membership Type</h2>
+                <fieldset>
+                    <legend>Membership Type</legend>
 
-                <div class="field">
-                    <label>Individual</label>
-                    <input type="radio" name="membership_type">
-                </div>
+                    <div class="field">
+                        <input type="radio" name="membership_type">
+                        <label>Individual</label>
+                    </div>
 
-                <div class="field">
-                    <label>Corporate</label>
-                    <input type="radio" name="membership_type">
-                </div>
+                    <div class="field">
+                        <input type="radio" name="membership_type">
+                        <label>Corporate</label>
+                    </div>
+                </fieldset>
             </main>
 
             <aside>
-                <h3>Which one is for me?</h3>
+                <h3>How do I choose?</h3>
 
                 <p>
                     <strong>Individual:</strong>
@@ -144,25 +151,29 @@
 
         <section>
             <main>
-                <div class="field">
-                    <label>Card Number</label>
-                    <input type="text" class="cc-num" pattern="\d*" autocomplete="cc-number" required>
-                </div>
+                <fieldset>
+                    <legend>Payment Information</legend>
 
-                <div class="field">
-                    <label>Name on Card</label>
-                    <input type="text" required>
-                </div>
+                    <div class="field required">
+                        <label>Card Number</label>
+                        <input type="text" class="cc-num" pattern="\d*" autocomplete="cc-number" required>
+                    </div>
 
-                <div class="field">
-                    <label>Expiry</label>
-                    <input type="text" class="cc-exp" size="12" placeholder="MM / YYYY" autocomplete="cc-exp" required>
-                </div>
+                    <div class="field required">
+                        <label>Name on Card</label>
+                        <input type="text" required>
+                    </div>
 
-                <div class="field">
-                    <label>CVC</label>
-                    <input type="text" class="cc-cvc" size="4" autocomplete="off">
-                </div>
+                    <div class="field required">
+                        <label>Expiry</label>
+                        <input type="text" class="cc-exp" size="12" placeholder="MM / YYYY" autocomplete="cc-exp" required>
+                    </div>
+
+                    <div class="field required">
+                        <label>CVC</label>
+                        <input type="text" class="cc-cvc" size="4" autocomplete="off">
+                    </div>
+                </fieldset>
             </main>
 
             <aside>
