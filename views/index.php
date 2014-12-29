@@ -11,13 +11,16 @@
     <header>
         <div>
             <a href="http://coworkniagara.com">
-                <img src="assets/logo-horizontal.svg" height="80">
+                <img src="assets/logo-horizontal.svg" height="60">
             </a>
         </div>
     </header>
 
+    <h1>Join the Cowork Niagara Co-operative</h1>
+
     <form id="signup-form" method="POST" autocomplete="on" novalidate>
         <section>
+
             <main>
                 <fieldset>
                     <legend>Your Information</legend>
@@ -92,7 +95,7 @@
 
                     <div class="field">
                         <label>
-                            <input type="checkbox">
+                            <input type="checkbox" checked>
                             Yes, sign me up to the Cowork Niagara Newsletter
                         </label>
                     </div>
