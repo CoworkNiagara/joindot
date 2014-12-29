@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <section>
+        <div>
             <a href="http://coworkniagara.com">
                 <img src="assets/logo-horizontal.svg" height="80">
             </a>
-        </section>
+        </div>
     </header>
 
     <form method="POST">
@@ -145,8 +145,8 @@
         <section>
             <main>
                 <div class="field">
-                    <label>Credit Card</label>
-                    <input type="text">
+                    <label>Card Number</label>
+                    <input type="text" class="cc-num">
                 </div>
 
                 <div class="field">
@@ -155,12 +155,13 @@
                 </div>
 
                 <div class="field">
-                    <label>Expiration</label>
+                    <label>Expiry</label>
+                    <input type="text" class="cc-exp" size="12" placeholder="MM / YYYY">
                 </div>
 
                 <div class="field">
                     <label>CVC</label>
-                    <input type="text" maxlength="4">
+                    <input type="text" class="cc-cvc" size="4">
                 </div>
             </main>
 
@@ -179,6 +180,8 @@
         </section>
     </form>
 
+    <script src="assets/vendor/jquery-2.1.3.min.js"></script>
+    <script src="assets/vendor/jquery.payment.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@ section {
     width: 100%;
     margin: 0 auto;
     width: 800px;
+    border-bottom: 1px solid #ddd;
 }
 
 main, aside {
@@ -31,7 +32,6 @@ main {
 
 aside {
     width: 30%;
-    background: #eee;
 }
 
 aside h3 {
@@ -43,6 +43,12 @@ header {
     margin-bottom: 1em;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+header > div {
+    width: 800px;
+    margin: 0 auto;
+}
+
 
 /* Form */
 
