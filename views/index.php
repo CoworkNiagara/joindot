@@ -15,19 +15,19 @@
         </div>
     </header>
 
-    <form method="POST">
+    <form method="POST" autocomplete="on" novalidate>
         <section>
             <main>
                 <h2>Your Information</h2>
 
                 <div class="field">
                     <label>First Name</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="field">
                     <label>Last Name</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="field">
@@ -37,7 +37,7 @@
 
                 <div class="field">
                     <label>Address</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="field">
@@ -47,17 +47,17 @@
 
                 <div class="field">
                     <label>City</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="field">
                     <label>Postal Code</label>
-                    <input type="text" placeholder="L#L #L#">
+                    <input type="text" placeholder="L#L #L#" required>
                 </div>
 
                 <div class="field">
                     <label>Phone Number</label>
-                    <input type="text" placeholder="905-555-1212">
+                    <input type="text" placeholder="905-555-1212" required>
                 </div>
             </main>
 
@@ -78,12 +78,12 @@
 
                 <div class="field">
                     <label>Email Address</label>
-                    <input type="email" placeholder="your@emailaddress.com">
+                    <input type="email" placeholder="your@emailaddress.com" required>
                 </div>
 
                 <div class="field">
                     <label>Confirm Email Address</label>
-                    <input type="email" placeholder="your@emailaddress.com">
+                    <input type="email" placeholder="your@emailaddress.com" required>
                 </div>
 
                 <div class="field">
@@ -146,22 +146,22 @@
             <main>
                 <div class="field">
                     <label>Card Number</label>
-                    <input type="text" class="cc-num">
+                    <input type="text" class="cc-num" pattern="\d*" autocomplete="cc-number" required>
                 </div>
 
                 <div class="field">
                     <label>Name on Card</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="field">
                     <label>Expiry</label>
-                    <input type="text" class="cc-exp" size="12" placeholder="MM / YYYY">
+                    <input type="text" class="cc-exp" size="12" placeholder="MM / YYYY" autocomplete="cc-exp" required>
                 </div>
 
                 <div class="field">
                     <label>CVC</label>
-                    <input type="text" class="cc-cvc" size="4">
+                    <input type="text" class="cc-cvc" size="4" autocomplete="off">
                 </div>
             </main>
 
