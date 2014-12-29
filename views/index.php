@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="assets/vendor/normalize.css">
     <link rel="stylesheet" href="assets/main.css">
+    <script type="text/javascript">
+    Stripe.setPublishableKey("<?= STRIPE_PUBLIC_KEY ?>");
+    </script>
 </head>
 <body>
     <header>
