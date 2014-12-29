@@ -120,13 +120,17 @@
                     <legend>Membership Type</legend>
 
                     <div class="field">
-                        <input type="radio" name="membership_type">
-                        <label>Individual</label>
+                        <label>
+                            <input type="radio" name="membership_type">
+                            Individual - $125.00 per year
+                        </label>
                     </div>
 
                     <div class="field">
-                        <input type="radio" name="membership_type">
-                        <label>Corporate</label>
+                        <label>
+                            <input type="radio" name="membership_type">
+                            Corporate - $250.00 per year
+                        </label>
                     </div>
                 </fieldset>
             </main>
