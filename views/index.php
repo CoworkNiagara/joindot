@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="assets/vendor/normalize.css">
     <link rel="stylesheet" href="assets/main.css">
-    <script type="text/javascript">
-    Stripe.setPublishableKey("<?= STRIPE_PUBLIC_KEY ?>");
-    </script>
 </head>
 <body>
     <header>
@@ -19,7 +16,7 @@
         </div>
     </header>
 
-    <form method="POST" autocomplete="on" novalidate>
+    <form id="signup-form" method="POST" autocomplete="on" novalidate>
         <section>
             <main>
                 <fieldset>
@@ -94,8 +91,10 @@
                     </div>
 
                     <div class="field">
-                        <input type="checkbox">
-                        <label>Yes, sign me up to the Cowork Niagara Newsletter</label>
+                        <label>
+                            <input type="checkbox">
+                            Yes, sign me up to the Cowork Niagara Newsletter
+                        </label>
                     </div>
                 </fieldset>
             </main>
@@ -161,6 +160,8 @@
                 <fieldset>
                     <legend>Payment Information</legend>
 
+                    <div class="payment-errors"></div>
+
                     <div class="field required">
                         <label>Card Number</label>
                         <input type="text" class="cc-num" pattern="\d*" autocomplete="cc-number" required>
@@ -181,6 +182,8 @@
                         <input type="text" class="cc-cvc" size="4" autocomplete="off">
                     </div>
                 </fieldset>
+
+                <button type="submit">Sign me up!</button>
             </main>
 
             <aside>
@@ -192,13 +195,13 @@
                 </p>
             </aside>
         </section>
-
-        <section>
-            <button type="submit">Signup</button>
-        </section>
     </form>
 
     <script src="assets/vendor/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript">
+        Stripe.setPublishableKey("<?= STRIPE_PUBLIC_KEY ?>");
+    </script>
     <script src="assets/vendor/jquery.payment.js"></script>
     <script src="assets/main.js"></script>
 </body>
