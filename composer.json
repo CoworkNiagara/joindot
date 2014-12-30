@@ -4,7 +4,8 @@
     "require": {
         "mikecao/flight": "~1.2",
         "stripe/stripe-php": "~1.17",
-        "mailchimp/mailchimp": "~2.0"
+        "mailchimp/mailchimp": "~2.0",
+        "nette/mail": "~2.2"
     },
     "authors": [
         {
