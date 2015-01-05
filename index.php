@@ -12,7 +12,8 @@ use Nette\Mail\SendmailMailer;
 Stripe::setApiKey(STRIPE_SECRET_KEY);
 
 Flight::route("GET /", function() {
-    Flight::render("index.php");
+    Flight::render("index", array(), "body_content");
+    Flight::render("layout");
 });
 
 Flight::route("POST /", function() {
@@ -71,12 +72,14 @@ Flight::route("POST /", function() {
         $body = $e->getJsonBody();
         $stripe_error = $body["error"]["message"];
 
-        Flight::render("index.php", array("stripe_error" => $stripe_error));
+        Flight::render("index", array("stripe_error" => $stripe_error), "body_content");
+        Flight::render("layout");
     }
 });
 
 Flight::route("GET /welcome", function() {
-    Flight::render("welcome.php");
+    Flight::render("welcome", array(), "body_content");
+    Flight::render("layout");
 });
 
 Flight::start();
