@@ -18,9 +18,8 @@
 
     <h1>Join the Cowork Niagara Co-operative</h1>
 
-    <form id="signup-form" method="POST" autocomplete="on" novalidate>
+    <form id="signup-form" method="POST" autocomplete="on" novalidate data-parsley-validate>
         <section>
-
             <main>
                 <fieldset>
                     <legend>Your Information</legend>
@@ -85,12 +84,12 @@
 
                     <div class="field required">
                         <label>Email Address</label>
-                        <input type="email" name="email_address" placeholder="your@emailaddress.com" required>
+                        <input type="email" name="email_address" id="email_address" placeholder="your@emailaddress.com" required>
                     </div>
 
                     <div class="field required">
                         <label>Confirm Email Address</label>
-                        <input type="email" placeholder="your@emailaddress.com" required>
+                        <input type="email" placeholder="your@emailaddress.com" required data-parsley-equalto="#email_address">
                     </div>
 
                     <div class="field">
@@ -126,14 +125,14 @@
 
                     <div class="field">
                         <label>
-                            <input type="radio" name="membership_type" value="Individual Membership">
+                            <input type="radio" name="membership_type" value="Individual Membership" required>
                             Individual - $125.00 per year
                         </label>
                     </div>
 
                     <div class="field">
                         <label>
-                            <input type="radio" name="membership_type" value="Corporate Membership">
+                            <input type="radio" name="membership_type" value="Corporate Membership" required>
                             Corporate - $250.00 per year
                         </label>
                     </div>

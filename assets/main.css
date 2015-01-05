@@ -114,3 +114,11 @@ fieldset legend {
 .field input[type="checkbox"] + label {
     display: inline-block;
 }
+
+.parsley-errors-list.filled {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0.5em;
+    padding-left: 0;
+    color: red;
+}

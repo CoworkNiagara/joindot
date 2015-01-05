@@ -18,11 +18,13 @@
     };
 
     $form.submit(function() {
+        if (! $form.parsley().validate()) return false;
+
         $form.find("button").prop("disabled", true);
 
-        var expiry = $(".cc-exp").val().split(" / "),
-            exp_month = expiry[0],
-            exp_year = expiry[1];
+        var expiry = $(".cc-exp").val().split(" / ");
+            exp_month = ($.isNumeric(expiry[0]) ? expiry[0] : 0),
+            exp_year = ($.isNumeric(expiry[1]) ? expiry[1] : 0);
 
         Stripe.card.createToken({
             number: $(".cc-num").val(),
