@@ -46,7 +46,7 @@ Flight::route("POST /", function() {
         // Send welcome email
         $mail = new Message;
         $mail->setFrom(MAIL_FROM)
-             ->addTo("adam@mediadrive.ca")
+             ->addTo($_POST["email_address"])
              ->setSubject("Welcome to Cowork Niagara")
              ->setHtmlBody($renderer->fetch("welcome_email.php"));
 
@@ -62,6 +62,7 @@ Flight::route("POST /", function() {
         $mailer->send($mail);
 
         // Signup newsletter if checked
+
         Flight::redirect("/welcome");
     }
 
