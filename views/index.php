@@ -56,12 +56,12 @@
 
                     <div class="field required">
                         <label>Postal Code</label>
-                        <input type="text" name="postal_code" size="10" placeholder="L#L #L#" required>
+                        <input type="text" name="postal_code" size="10" required data-parsley-minlength="6">
                     </div>
 
                     <div class="field required">
                         <label>Phone Number</label>
-                        <input type="text" name="phone_number" placeholder="905-555-1212" required>
+                        <input type="text" name="phone_number" placeholder="905-555-1212" required data-parsley-minlength="10">
                     </div>
                 </fieldset>
             </main>
