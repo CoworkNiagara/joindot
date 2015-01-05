@@ -20,7 +20,17 @@
     $form.submit(function() {
         $form.find("button").prop("disabled", true);
 
-        Stripe.card.createToken($form, stripeResponseHandler);
+        var expiry = $(".cc-exp").val().split(" / "),
+            exp_month = expiry[0],
+            exp_year = expiry[1];
+
+        Stripe.card.createToken({
+            number: $(".cc-num").val(),
+            cvc: $(".cc-cvc").val(),
+            exp_month: exp_month,
+            exp_year: exp_year,
+            name: $(".cc-name").val(),
+        }, stripeResponseHandler);
 
         return false;
     });
