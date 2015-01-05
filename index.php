@@ -21,13 +21,11 @@ Flight::route("POST /", function() {
 
     // Determine values depending on membership type
     switch($_POST["membership_type"]) {
-        case "individual":
-            $description = "Individual Membership";
+        case "Individual Membership":
             $amount = "12500";
             break;
 
-        case "corporate":
-            $description = "Corporate Membership";
+        case "Corporate Membership":
             $amount = "25000";
             break;
 
@@ -36,14 +34,12 @@ Flight::route("POST /", function() {
     }
 
     try {
-        /*
         Stripe_Charge::create(array(
             "amount" => $amount,
             "currency" => "CAD",
-            "description" => $description,
+            "description" => $_POST["membership_type"],
             "card" => $_POST["stripeToken"]
         ));
-         */
 
         $mailer = new SendmailMailer;
 

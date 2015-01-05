@@ -27,42 +27,42 @@
 
                     <div class="field required">
                         <label>First Name</label>
-                        <input type="text" required>
+                        <input type="text" name="first_name" required>
                     </div>
 
                     <div class="field required">
                         <label>Last Name</label>
-                        <input type="text" required>
+                        <input type="text" name="last_name" required>
                     </div>
 
                     <div class="field">
                         <label>Company Name</label>
-                        <input type="text" placeholder="Optional">
+                        <input type="text" name="company_name" placeholder="Optional">
                     </div>
 
                     <div class="field required">
                         <label>Address</label>
-                        <input type="text" required>
+                        <input type="text" name="address" required>
                     </div>
 
                     <div class="field">
                         <label>Address 2</label>
-                        <input type="text" placeholder="Apt, Suite, etc">
+                        <input type="text" name="address_2" placeholder="Apt, Suite, etc">
                     </div>
 
                     <div class="field required">
                         <label>City</label>
-                        <input type="text" required>
+                        <input type="text" name="city" required>
                     </div>
 
                     <div class="field required">
                         <label>Postal Code</label>
-                        <input type="text" size="10" placeholder="L#L #L#" required>
+                        <input type="text" name="postal_code" size="10" placeholder="L#L #L#" required>
                     </div>
 
                     <div class="field required">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="905-555-1212" required>
+                        <input type="text" name="phone_number" placeholder="905-555-1212" required>
                     </div>
                 </fieldset>
             </main>
@@ -85,7 +85,7 @@
 
                     <div class="field required">
                         <label>Email Address</label>
-                        <input type="email" placeholder="your@emailaddress.com" required>
+                        <input type="email" name="email_address" placeholder="your@emailaddress.com" required>
                     </div>
 
                     <div class="field required">
@@ -95,7 +95,7 @@
 
                     <div class="field">
                         <label>
-                            <input type="checkbox" checked>
+                            <input type="checkbox" name="newsletter_signup" value="1" checked>
                             Yes, sign me up to the Cowork Niagara Newsletter
                         </label>
                     </div>
@@ -126,14 +126,14 @@
 
                     <div class="field">
                         <label>
-                            <input type="radio" name="membership_type">
+                            <input type="radio" name="membership_type" value="Individual Membership">
                             Individual - $125.00 per year
                         </label>
                     </div>
 
                     <div class="field">
                         <label>
-                            <input type="radio" name="membership_type">
+                            <input type="radio" name="membership_type" value="Corporate Membership">
                             Corporate - $250.00 per year
                         </label>
                     </div>
@@ -172,7 +172,7 @@
 
                     <div class="field required">
                         <label>Name on Card</label>
-                        <input type="text" required>
+                        <input type="text" class="cc-name" required>
                     </div>
 
                     <div class="field required">
@@ -193,8 +193,12 @@
                 <h3>
 
                 <p>
-                    Our website is secured with 256-bit SHA encryption.
-                    <!-- TODO: more info -->
+                    Our website is secured with 256-bit SHA encryption. For your security, we do not store your credit card
+                    information.
+                </p>
+
+                <p>
+                    Charges will appear on your credit card statement as COWORKNIAGARA.COM.
                 </p>
             </aside>
         </section>
