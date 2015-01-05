@@ -74,6 +74,10 @@
                     we have to collect and maintain names and addresses for all
                     of our members, past and present.
                 </p>
+
+                <p>
+                    Be assured that we do not rent, sell, lease, or provide your information to other parties.
+                </p>
             </aside>
         </section>
 
@@ -189,7 +193,7 @@
             </main>
 
             <aside>
-                <h3>
+                <h3>We own tinfoil hats</h3>
 
                 <p>
                     Our website is secured with 256-bit SHA encryption. For your security, we do not store your credit card
