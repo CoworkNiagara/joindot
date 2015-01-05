@@ -16,6 +16,7 @@ Flight::route("GET /", function() {
 });
 
 Flight::route("POST /", function() {
+    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     $renderer = new \flight\template\View(__DIR__."/views");
 
     // Determine values depending on membership type
