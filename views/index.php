@@ -210,6 +210,7 @@
         Stripe.setPublishableKey("<?= STRIPE_PUBLIC_KEY ?>");
     </script>
     <script src="assets/vendor/jquery.payment.js"></script>
+    <script src="assets/vendor/parsley.min.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>
