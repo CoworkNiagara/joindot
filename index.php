@@ -30,7 +30,8 @@ Flight::route("POST /", function() {
             break;
 
         default:
-            // TODO: raise error
+            Flight::render("index.php");
+            exit;
     }
 
     try {
