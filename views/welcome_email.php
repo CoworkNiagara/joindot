@@ -324,7 +324,7 @@
           <div class="content">
           <table bgcolor="#ffb100">
             <tr>
-            <td><img src="<?= dirname(__FILE__) ?>/../assets/logo-horizontal.svg" height="50" /></td>
+            <td><img src="https://join.coworkniagara.com/assets/logo-horizontal.svg" height="50" /></td>
               <td align="right"><h6 class="collapse">Hey there new member!</h6></td>
             </tr>
           </table>
