@@ -17,14 +17,5 @@
     </header>
 
     <?= $body_content; ?>
-
-    <script src="assets/vendor/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript">
-        Stripe.setPublishableKey("<?= STRIPE_PUBLIC_KEY ?>");
-    </script>
-    <script src="assets/vendor/jquery.payment.js"></script>
-    <script src="assets/vendor/parsley.min.js"></script>
-    <script src="assets/main.js"></script>
 </body>
 </html>
