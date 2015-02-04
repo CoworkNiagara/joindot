@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Become a member - Cowork Niagara</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="assets/vendor/normalize.css">
     <link rel="stylesheet" href="assets/main.css">
 </head>
