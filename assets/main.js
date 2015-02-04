@@ -22,7 +22,7 @@
 
         $form.find("button").prop("disabled", true);
 
-        var expiry = $(".cc-exp").val().split(" / ");
+        var expiry = $(".cc-exp").val().split(" / "),
             exp_month = ($.isNumeric(expiry[0]) ? expiry[0] : 0),
             exp_year = ($.isNumeric(expiry[1]) ? expiry[1] : 0);
 
