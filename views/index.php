@@ -167,7 +167,7 @@
 
                 <div class="field required">
                     <label>CVC</label>
-                    <input type="text" class="cc-cvc" size="4" autocomplete="off">
+                    <input type="text" class="cc-cvc" size="4" autocomplete="off" required>
                 </div>
             </fieldset>
 
