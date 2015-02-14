@@ -40,7 +40,8 @@ Flight::route("POST /", function() {
             "amount" => $amount,
             "currency" => "CAD",
             "description" => $_POST["membership_type"],
-            "card" => $_POST["stripeToken"]
+            "card" => $_POST["stripeToken"],
+            "receipt_email" => $_POST["email_address"]
         ));
 
         $mailer = new SendmailMailer;
