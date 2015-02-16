@@ -8,6 +8,75 @@ html {
     box-sizing: inherit;
 }
 
+/* Fonts */
+@font-face {
+    font-family: 'spinners';
+    src:url('fonts/spinners.eot?aec2gu');
+    src:url('fonts/spinners.eot?#iefixaec2gu') format('embedded-opentype'),
+    url('fonts/spinners.woff?aec2gu') format('woff'),
+    url('fonts/spinners.ttf?aec2gu') format('truetype'),
+    url('fonts/spinners.svg?aec2gu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Spinner */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'spinners';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spinner2:before {
+    content: "\e97a";
+}
+
+.icon-spinner:before {
+    content: "\e982";
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -78,6 +147,20 @@ button[type="submit"] {
     box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     border: none;
     cursor: pointer;
+}
+
+button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button[type="submit"] .icon-spinner {
+    display: none;
+}
+
+button[type="submit"][disabled] .icon-spinner {
+    display: inline-block;
+    margin-right: 0.25em;
 }
 
 fieldset {

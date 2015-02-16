@@ -171,7 +171,10 @@
                 </div>
             </fieldset>
 
-            <button type="submit">Sign me up!</button>
+            <button type="submit">
+                <span class="icon-spinner spin"></span>
+                Sign me up!
+            </button>
         </main>
 
         <aside>
