@@ -2,7 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Become a member - Cowork Niagara</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Become a member - Join Cowork Niagara</title>
+    <meta name="description" content="Join Cowork Niagara - a community for Niagara's independent workforce.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="https://<?= $_SERVER["HTTP_HOST"] ?><?= $_SERVER["REQUEST_URI"] ?>">
+    <meta property="og:image" content="https://<?= $_SERVER["HTTP_HOST"] ?>/assets/logo-horizontal.svg">
+    <meta property="og:description" content="Join Cowork Niagara - a community for Niagara's independent workforce.">
+    <meta property="og:title" content="Become a Member - Join Cowork Niagara">
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="assets/vendor/normalize.css">
     <link rel="stylesheet" href="assets/main.css">
