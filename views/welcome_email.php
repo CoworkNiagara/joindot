@@ -425,9 +425,9 @@
                             <h5 class="">Contact Info:</h5>
                             <p>
                               Cowork Niagara<br>
-                              108 St. Paul Street<br>
+                              325 Welland Avenue, Suite 220<br>
                               St. Catharines, Ontario<br>
-                              L2R 3M2<br>
+                              L2R 2R2<br>
                               Phone: <strong>(289) 479-5459</strong><br/>
                               Email: <strong><a href="emailto:coworkniagara@gmail.com">coworkniagara@gmail.com</a></strong>
                             </p>
